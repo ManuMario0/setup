@@ -8,4 +8,7 @@ all:
 	cp fortunes.dat ~/.prompt/fortunes.dat
 	cat bashrc >> ~/.bashrc
 	cat profile >> ~/.bash_profile
-	mv .git-prompt.sh ~/
+	cp .git-prompt.sh ~/.git-prompt.sh
+	pip install fortune
+	cd ~
+	source .bashrc
